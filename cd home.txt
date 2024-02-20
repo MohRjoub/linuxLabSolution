@@ -1,0 +1,40 @@
+Q1
+mkdir -p 1220929_prj1/firstSemester/myData/../myDocuments/f2024/../../myData/courses/comp2311/../comp233/../comp242/../../../myDocuments/f2024/linux/../java/../../../../mydir/moves/../mp3/../info/personal
+
+touch 1220929_prj1/command.txt 1220929_prj1/mydir/mp3/Mp3_list.txt 1220929_prj1/mydir/moves/moves_list.txt 1220929_prj1/mydir/info/personal/myInfo.txt 1220929_prj1/mydir/info/personal/best_places.txt 1220929_prj1/firstSemester/myData/MySchedual.txt 1220929_prj1/firstSemester/myDocuments/f2024/linux/final 1220929_prj1/firstSemester/myDocuments/f2024/java/projects 1220929_prj1/firstSemester/myDocuments/f2024/java/practical
+Q2
+:map! H G$4b4dw
+:map! W 8G2k2yyGp
+Q3
+1- cd 1220929_prj1/firstSemester/myDocuments
+ln  ../../mydir/info/personal/myInfo.txt linkmyInfo
+2-cd 1220929_prj1/firstSemester/myDocuments/f2024
+ ln -s ../../myData/courses link_courses1
+Q4
+cd 1220929_prj1/mydir/info/personal
+vi best_places.txt
+:wq
+Q5 A- G$
+B- 3G
+C- 5G2k2yy
+D- ?mohammad Enter 2b2dw
+E- 1G2ddGP
+Q6
+ls /etc/[hj]?[aeiou]*
+Q7
+cp 1220929_prj1/firstSemester/myDocuments/f2024/java/* 1220929_prj1/firstSemester/myData/courses/comp2311
+Q8
+touch 1220929_prj1/firstSemester/myData/courses/comp242/Queue
+with using rm dir command the directory did not delete because it contain a file inside it we can delet it by using rm -rf dir
+Q9
+chmod 506 1220929_prj1/firstSemester/myDocuments/f2024/linux
+Q10 
+umask 531
+umask 421
+umask 521
+umask 530
+umask 421
+umask 520
+umask 420
+Q11
+stat -c %z myInfo.txt

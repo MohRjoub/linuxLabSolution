@@ -1,0 +1,20 @@
+Q1
+grep -i '_Mohammad' prj2_passwd | grep '/bin/zsh$' | cut -d; -f1
+Q2
+grep -i 'comp322' prj2_passwd | sort -t： -k3 -r -u | cut -d： -f5 | cut -d- -f1 | tr 'a-z' 'A-Z'
+Q3
+grep ':/bin/sh$' prj2_passwd | cut -d: -f5 | tr '_' ' ' | tr 'a-z' 'A-Z' > sh_shellusers
+Q4
+head -n 20 prj2_passwd | tail -n 6 | cut -d: -f5 | tr 'a-z' 'A-Z' | sort -r > user.txt
+Q5
+cut -d: -f5 prj2_passwd | cut -d, -f1 | grep -i '[a-o]$' | cut -d_ f1 | sort -u | tr 'a-z' 'A-Z' > a_oSorted.txt
+Q6
+grep -v '/bin/zsh$' prj2_passwd | cut -d： -f5 | cut -d, -f1 | tr 'a-z' 'A-Z' | sort -r
+Q7
+grep 'u116' prj2_passwd | sort -t: -k3 | cut -d: -f5 | cut -d_ -f2
+Q8
+find /etc -type f | grep -v 'passwd' | more
+Q9
+find /etc -type d | grep -i '^/etc/[a-k]' | wc -l
+Q10
+grep -i ksh$ prj2_passwd | cut -d: -f5 | sed 's/[a-z_]//g' | cut -c1,2

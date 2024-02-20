@@ -1,0 +1,50 @@
+Q1
+find / -type d > directories.txt 2> errors.txt
+Q2
+vi forever
+while true
+do echo hi Comp311 students> out
+done
+:wq!
+Q3
+PATH=$PATH:.
+chmod u+x forever
+forever&
+Q4
+forever
+bg %1
+jobs
+ps
+fg %1
+Q5
+forever&
+forever&
+forever&
+forever&
+kill %1 %2 %3 %4
+forever&
+forever&
+forever&
+forever&
+kill 435 436 437 438
+Q6
+forever&
+kill -Stop 465
+bg %1
+Q7
+kill $(jobs -p)
+we use Command substitution to give the output of jobs -p to the kill command
+The command kill $(jobs -p) sends a SIGTERM signal to all the background processes that are running
+in the current shell.This signal can be ignored by the shell, so it not terminate.
+Q8
+myprj2var=project
+export myprj2var
+Q9
+mkdir ~/Prj2
+PATH=$PATH:~/Prj2
+echo $PATH
+Q10
+nice -10 forever&
+sudo renice -19 200
+nice is used to launch a new process with a specified priority, 
+but renice is used to change the priority of an existing process
